@@ -1,8 +1,11 @@
-
+{
   "name": "Atmosphere",
   "symbol": "ATMOS",
   "description": "ATMOS is the governance and utility token of the Atmosphere / Atmos Protocol — a modular DeFi stack on Sui featuring veATMOS locking, quadratic voting, futarchy prediction markets, and AtmosPay autonomous payment agents.",
-  "decimals": 6,
+  "decimals": {
+    "onchain": 9,
+    "ui": 6
+  },
   "website": "https://atmosprotocol.fun",
   "twitter": "https://twitter.com/atmosprotocol",
   "discord": "https://discord.gg/atmosprotocol",
@@ -10,9 +13,20 @@
   "whitepaper": "https://atmosprotocol.fun/whitepaper.pdf",
   "iconUrl": "https://raw.githubusercontent.com/atmos-protocol/atmos/main/assets/icons/token-icon.png",
   "logoUrl": "https://raw.githubusercontent.com/atmos-protocol/atmos/main/assets/atmos-logo.svg",
-  "tags": ["governance", "defai", "payments", "dao", "vetoken", "sui"],
+  "tags": [
+    "governance",
+    "defai",
+    "payments",
+    "dao",
+    "vetoken",
+    "futarchy",
+    "sui",
+    "agents"
+  ],
+
   "coingeckoId": "",
   "coinmarketcapId": "",
+
   "networks": {
     "sui:testnet": {
       "packageId": "",
@@ -29,21 +43,91 @@
       "coinType": "::token::ATMOS"
     }
   },
+
   "links": {
     "explorer_testnet": "https://suiexplorer.com/object/{packageId}?network=testnet",
     "explorer_mainnet": "https://suiexplorer.com/object/{packageId}?network=mainnet"
   },
+
   "supply": {
     "max": "20000000000000000",
-    "decimals": 9,
-    "human_max": "20,000,000,000 ATMOS"
+    "onchain_decimals": 9,
+    "human_readable": "20,000,000,000 ATMOS",
+    "inflation": "fixed"
   },
+
   "tokenomics": {
-    "community":            "35%",
-    "ecosystem_development":"20%",
-    "liquidity":            "15%",
-    "team":                 "15%",
-    "treasury":             "10%",
-    "reserve":              "5%",
+    "community_and_users": {
+      "percent": 35,
+      "amount": "7,000,000,000",
+      "notes": [
+        "Airdrops",
+        "Liquidity mining",
+        "veATMOS incentives",
+        "Governance participation",
+        "AtmosPay agent usage rewards"
+      ]
+    },
+    "ecosystem_development": {
+      "percent": 20,
+      "amount": "4,000,000,000",
+      "notes": [
+        "Builder grants",
+        "SDKs & tooling",
+        "Integrations",
+        "Cross-chain & x402 infrastructure"
+      ]
+    },
+    "liquidity_and_market_making": {
+      "percent": 15,
+      "amount": "3,000,000,000",
+      "notes": [
+        "DEX liquidity",
+        "Market makers",
+        "On-chain depth provisioning"
+      ]
+    },
+    "team_and_core_contributors": {
+      "percent": 15,
+      "amount": "3,000,000,000",
+      "vesting": {
+        "cliff_months": 12,
+        "vesting_months": 48,
+        "governance": "veATMOS lock required"
+      }
+    },
+    "protocol_treasury": {
+      "percent": 10,
+      "amount": "2,000,000,000",
+      "control": "DAO + futarchy governed"
+    },
+    "strategic_reserve": {
+      "percent": 5,
+      "amount": "1,000,000,000",
+      "purpose": [
+        "Emergency backstop",
+        "Acquisitions",
+        "Cross-chain expansion"
+      ]
+    }
+  },
+
+  "governance": {
+    "model": "veATMOS",
+    "voting": "quadratic",
+    "execution": "futarchy + timelock",
+    "treasury_access": "proposal + market only"
+  },
+
+  "agents": {
+    "atmosPay": {
+      "description": "Non-custodial autonomous payment agents for onramp, swap, trade, and offramp across chains.",
+      "features": [
+        "Multi-chain",
+        "Native x402 support",
+        "One-prompt CLI",
+        "On-chain execution"
+      ]
+    }
   }
 }
