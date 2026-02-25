@@ -1,0 +1,49 @@
+
+  "name": "Atmosphere",
+  "symbol": "ATMOS",
+  "description": "ATMOS is the governance and utility token of the Atmosphere / Atmos Protocol — a modular DeFi stack on Sui featuring veATMOS locking, quadratic voting, futarchy prediction markets, and AtmosPay autonomous payment agents.",
+  "decimals": 6,
+  "website": "https://atmosprotocol.fun",
+  "twitter": "https://twitter.com/atmosprotocol",
+  "discord": "https://discord.gg/atmosprotocol",
+  "github": "https://github.com/atmos-protocol/atmos",
+  "whitepaper": "https://atmosprotocol.fun/whitepaper.pdf",
+  "iconUrl": "https://raw.githubusercontent.com/atmos-protocol/atmos/main/assets/icons/token-icon.png",
+  "logoUrl": "https://raw.githubusercontent.com/atmos-protocol/atmos/main/assets/atmos-logo.svg",
+  "tags": ["governance", "defai", "payments", "dao", "vetoken", "sui"],
+  "coingeckoId": "",
+  "coinmarketcapId": "",
+  "networks": {
+    "sui:testnet": {
+      "packageId": "",
+      "treasuryId": "",
+      "governanceId": "",
+      "rewardPoolId": "",
+      "coinType": "::token::ATMOS"
+    },
+    "sui:mainnet": {
+      "packageId": "",
+      "treasuryId": "",
+      "governanceId": "",
+      "rewardPoolId": "",
+      "coinType": "::token::ATMOS"
+    }
+  },
+  "links": {
+    "explorer_testnet": "https://suiexplorer.com/object/{packageId}?network=testnet",
+    "explorer_mainnet": "https://suiexplorer.com/object/{packageId}?network=mainnet"
+  },
+  "supply": {
+    "max": "20000000000000000",
+    "decimals": 9,
+    "human_max": "20,000,000,000 ATMOS"
+  },
+  "tokenomics": {
+    "community":            "35%",
+    "ecosystem_development":"20%",
+    "liquidity":            "15%",
+    "team":                 "15%",
+    "treasury":             "10%",
+    "reserve":              "5%",
+  }
+}
