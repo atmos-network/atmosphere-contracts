@@ -15,8 +15,8 @@ module atmos::token {
     const E_CAP_EXCEEDED:   u64 = 4;
 
     // ─── Constants ───────────────────────────────────────────────────────────────
-    const MAX_SUPPLY: u64 = 1_000_000_000_000_000; // 1 billion ATMOS (6 decimals)
-    const DECIMALS:   u8  = 6;
+    const MAX_SUPPLY: u64 = 20_000_000_000_000_000; // 20 billion ATMOS (9 decimals)
+    const DECIMALS:   u8  = 9;
 
     // ─── One-time witness ────────────────────────────────────────────────────────
     struct ATMOS has drop {}
