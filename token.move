@@ -53,8 +53,8 @@ module atmos::token {
             witness,
             DECIMALS,
             b"ATMOS",
-            b"ATMOS Governance Token",
-            b"Governance and utility token for the ATMOS protocol",
+            b"Atmosphere",
+            b"Governance and utility token for the Atmos Protocol",
             option::none(),
             ctx,
         );
