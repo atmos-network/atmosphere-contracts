@@ -1,6 +1,8 @@
-# ATMOS Protocol
+# Atmosphere - Contracts
 
-> Production-ready governance + autonomous agent payment stack on Sui Move (2026 edition)
+## Atmos Protocol
+
+> Atmosphere governance + autonomous agent payment stack on Sui Move.
 
 ---
 
@@ -152,3 +154,5 @@ chmod +x scripts/deploy.sh scripts/e2e_workflow.sh
 ## License
 
 MIT — see [LICENSE](LICENSE)
+
+### 2026 Atmos Protocol
